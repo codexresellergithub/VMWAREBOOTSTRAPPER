@@ -25,7 +25,7 @@ int main() {
         std::wcerr << L"Error downloading file: " << hr << std::endl;
     }
     else {
-        std::wcout << L"Running VMWARE...\n";
+        std::wcout << L"Running VMWARE... You may close the cmd in 5 seconds.\n";
         HINSTANCE hInstance = ShellExecuteW(NULL, L"open", filePath, NULL, NULL, SW_SHOW);
         if (hInstance == (HINSTANCE)NULL) {
             std::wcerr << L"Error running VMWARE.\n";
